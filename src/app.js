@@ -17,15 +17,11 @@ window.onload = function() {
     "while I was praying"
   ];
 
-  function generadorExcusas(lista) {
-    return lista[Math.floor(Math.random() * lista.length)];
-  }
+  let excusa1 = Math.floor(Math.random() * who.length);
+  let excusa2 = Math.floor(Math.random() * action.length);
+  let excusa3 = Math.floor(Math.random() * what.length);
+  let excusa4 = Math.floor(Math.random() * when.length);
 
-  let excusa =
-    generadorExcusas(who) +
-    generadorExcusas(action) +
-    generadorExcusas(what) +
-    generadorExcusas(when);
-
-  document.querySelector("#excusa").innerHTML = excusa;
+  document.querySelector("#excusa").innerHTML =
+    who[excusa1] + action[excusa2] + what[excusa3] + when[excusa4];
 };
