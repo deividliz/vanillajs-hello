@@ -1,1 +1,6 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+.caja {
+  margin-top: 30%;
+  text-align: center;
+}
